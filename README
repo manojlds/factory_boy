@@ -144,6 +144,8 @@ Associated instances can also be generated using ``SubFactory``:
     class PostFactory(factory.Factory):
         author = factory.SubFactory(UserFactory)
 
+Note: Inherit from `DjangoModelFactory`, rather than `Factory`, when using Django ORM.
+
 
 The associated object's strategy will be used:
 
